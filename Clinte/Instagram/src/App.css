@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Button styles */
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+}
+
+button svg.icon {
+    width: 24px;
+    height: 24px;
+}
+
+button label {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+/* Home styles */
+.Home {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.Home img {
+    height: 40px;
+}
+
+.Home-content {
+    display: flex;
+    width: 240px;
+    height: 100vh;
+    padding: 20px;
+    border-right: solid 1px gray;
+    position: fixed; /* Add this line */
+    left: 0; /* Add this line */
+    top: 0; /* Add this line */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Home-content-right {
+    margin-left: 70%;
+    
+}
+
+.moreIcon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* Status styles */
+.userStatus {
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.statusDiv {
+    display: flex;
+    flex-direction: row; /* Changed to row for left-to-right movement */
+    gap: 10px;
+    margin-left: 15px;
+}
+
+/* Scrollable area */
+.statXeco {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.maxDiv {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Ecommerce styles */
+.posts {
+    height: 600px;
+    width: 450px;
+    background-color: gray;
+    margin: 40px;
+}
+
+.ecommerceDiv {
+    display: flex;
+    flex-direction: column; /* Changed to column for up-to-down movement */
+    margin-left: 15%;
+}
+
+.usersPosts_moreOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.usersPostTitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.postNavdiv {
+    display: flex;
+    gap: 5px;
+}
+
+.moreOption {
+    margin-left: auto;
+    margin-top: 12px;
+}
+
+/* Suggested styles */
+.suggested {
+    height: 100%;
+    width: 400px;
+    background-color: beige;
+}
+
+.userProfile {
+    display: flex;
+}
+
+.userProf {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: gray;
+}
+
+.suggestedForYou {
+    display: flex;
+}
+
+h3 {
+    font-size: 18px;
+    color: gray;
+}
+
+.suggestedProfImg {
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.suggestedProfileInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages styles */
+.messagesMaxDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.messages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+}
+
+.message-list {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.message-user {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.message-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #0056b3;
+}
+
+.Home-buttons {
+    display: flex;
+}
